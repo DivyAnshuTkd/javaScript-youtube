@@ -27,3 +27,40 @@ let someNumber = 33
 let stringNumber = String(someNumber)  // convert to string data type
 console.log(stringNumber);
 console.log(typeof stringNumber);
+
+
+
+
+// ********************** Operations **************************
+
+let value = 3
+let negValue = -value
+console.log(negValue);  // -3
+
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2/2);
+console.log(5%2);
+
+let str1 = "hello"
+let str2 = " hitesh"
+
+let str3 = str1 + str2
+console.log(str3);
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
+
+console.log(+true);  // 1
+console.log(+"");    // 0
+
+let num1, num2, num3
+
+num1 = num2 = num3 = 2 + 2  // don't do like this
+
+let gameCounter = 100
+gameCounter++;
+console.log(gameCounter);
