@@ -44,3 +44,33 @@ console.log(typeof heros); // object
 // JS is dynamically typed language
 // We don't need to specify data types while declaring a variable
 // Data type is assigned automatically based on the value assigned to the variable
+
+
+
+//  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive data types are used in stack memory), Heap (Non-Primitive data types are used in heap memory)
+
+// Primitive data types are used in stack memory this means that whenever you declared any variable than we got the copy of that variable in stack memory
+// Non-Primitive data types are used in heap memory this means that whenever you declared any variable than we got the reference of that original variable. 
+// This means that if we change the value of that variable than the original variable value will also be changed because both the variables are pointing to the same memory location
+
+let myYoutubename = "hitesh choudhary"
+
+let anotherName = myYoutubename
+anotherName = "chaiaurcode"
+
+console.log(myYoutubename); // hitesh choudhary
+console.log(anotherName); // chaiaurcode
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@upi"
+}
+
+let userTwo = userOne
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email); 
+console.log(userTwo.email);
