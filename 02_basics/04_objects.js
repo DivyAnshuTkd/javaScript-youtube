@@ -54,3 +54,37 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));   
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
+
+// Destructuring of object
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+
+const {courseInstructor: instructor} = course     //  renaming the key name from courseInstructor to instructor just to make it short whenever using in code in future
+
+// console.log(courseInstructor);
+console.log(instructor)
+
+
+// given below is JSON structure. In JSON key and value both must be written in quotes. This implies that JSON keys and values are string. Numbers and boolean values are not written in double quotes as there are not string
+
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+
+[
+    {},
+    {},
+    {}
+]
