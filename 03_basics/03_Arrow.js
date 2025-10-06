@@ -20,11 +20,11 @@ const user = {
 
 }
 
-// username.welcomeMessage()  error
+// username.welcomeMessage()
 user.username = "sam"
 user.welcomeMessage()
 
-console.log(this);     // will print {}
+console.log(this);     // will print {}    
 
 function chai()
 {
@@ -60,6 +60,20 @@ const addTwo = (num1, num2) => ({username: "hitesh"})
 
 console.log(addTwo(3, 4))
 
+
+
+
+
 // Regular function: Has its own this, can be used as a constructor, and has access to arguments.
 
 // Arrow function: Does not have its own this (inherits from parent), cannot be used as a constructor, and does not have arguments.
+
+
+// this refers to the current context i.e. if this is written in current object than it will refer to the object in which it is written.
+// if 'this' is written outside any object or just written globally then this keyword will point the current context. Here current context
+// will be the module object ({}) in node.js.
+
+
+
+// if 'this' is written outside any object or just written globally int browser then this keyword will point the current context. In browser current context
+// will be the global object in browser.
