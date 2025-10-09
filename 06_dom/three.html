@@ -4,23 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chai aur code </title>
+    <title>Chai aur code</title>
 </head>
 <body style="background-color: #212121; color: #fff;">
-    
 </body>
+
 <script>
+    // 1️⃣ Create a new <div> element (not yet visible in the page)
     const div = document.createElement('div')
     console.log(div);
+    // 👉 Console shows: <div></div>
+
+    // 2️⃣ Add a class name to the <div>
     div.className = "main"
+    // 👉 <div class="main"></div>
+
+    // 3️⃣ Add a unique id to the <div> using random number
     div.id = Math.round(Math.random() * 10 + 1)
+    // 👉 Example: <div class="main" id="8"></div>
+
+    // 4️⃣ Add a new attribute (title)
     div.setAttribute("title", "generated title")
+    // 👉 Now <div class="main" id="8" title="generated title"></div>
+
+    // 5️⃣ Add some inline CSS styles
     div.style.backgroundColor = "green"
     div.style.padding = "12px"
-    // div.innerText = "Chai aur code"
-    const addText = document.createTextNode("Chai aur code")
-    div.appendChild(addText)
+    // 👉 Visually, the div will have green background and padding
 
+    // 6️⃣ (Option 1) You *could* directly set text using innerText
+    // div.innerText = "Chai aur code"
+
+    // 7️⃣ (Option 2) A better, more controlled way: create a text node
+    const addText = document.createTextNode("Chai aur code")
+
+    // 8️⃣ Append the text node inside the <div>
+    div.appendChild(addText)
+    // 👉 Now the div looks like:
+    // <div class="main" id="8" title="generated title" style="background-color: green; padding: 12px;">Chai aur code</div>
+
+    // 9️⃣ Finally, attach the div to the HTML <body>
     document.body.appendChild(div)
+    // 👉 The div becomes visible on the webpage with green background and white text.
 </script>
 </html>

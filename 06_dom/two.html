@@ -17,23 +17,60 @@
 </body>
 <script>
     const parent = document.querySelector('.parent')
+
     // console.log(parent);
+    // 👉 Prints the <div class="parent"> element and all its children to the console.
+
     // console.log(parent.children);
+    // 👉 Prints an HTMLCollection (like an array) of all child elements inside .parent.
+    //     It will contain 4 <div class="day"> elements (Monday → Thursday).
+    //     Note: It excludes comments and text nodes.
+
     // console.log(parent.children[1].innerHTML);
+    // 👉 Prints the inner text of the 2nd child (index 1), i.e. "Tuesday".
 
     // for (let i = 0; i < parent.children.length; i++) {
     //      console.log(parent.children[i].innerHTML);
-        
     // }
+    // 👉 Loops through each .day element and prints:
+    //     Monday
+    //     Tuesday
+    //     Wednesday
+    //     Thursday
+
     parent.children[1].style.color = "orange"
+    // 👉 Changes the color of the 2nd child (Tuesday) to orange.
+
     // console.log(parent.firstElementChild);
+    // 👉 Prints the first child element of .parent, i.e. <div class="day">Monday</div>.
+
     // console.log(parent.lastElementChild);
+    // 👉 Prints the last child element of .parent, i.e. <div class="day">Thursday</div>.
 
     const dayOne = document.querySelector('.day')
+
     // console.log(dayOne);
+    // 👉 Prints the first element with class "day" (Monday).
+
     // console.log(dayOne.parentElement);
+    // 👉 Prints the parent element of "Monday", which is the <div class="parent">.
+
     // console.log(dayOne.nextElementSibling);
+    // 👉 Prints the next sibling element after "Monday", which is <div class="day">Tuesday</div>.
 
     console.log("NODES: ", parent.childNodes);
+    // 👉 Prints a NodeList of all child nodes of .parent, including:
+    //     1. Text node (newline/whitespace)
+    //     2. Comment node (<!-- this is a comment -->)
+    //     3. Text node (newline)
+    //     4. <div class="day">Monday</div>
+    //     5. Text node (newline)
+    //     6. <div class="day">Tuesday</div>
+    //     7. Text node (newline)
+    //     8. <div class="day">Wednesday</div>
+    //     9. Text node (newline)
+    //    10. <div class="day">Thursday</div>
+    //    11. Text node (newline)
+    // 👉 So it shows *all nodes*, not just elements.
 </script>
 </html>
